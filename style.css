@@ -1,3 +1,12 @@
+:root {
+    --sidebar-background: blueviolet;
+    --sidebar-text: white;
+    --main-background: 
+    --secondary-background:
+    --main-color:
+    --secondary-color:
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -27,15 +36,40 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 5fr;
     padding: 20px;
+    row-gap: 60px;
+
+    background-color: var(--sidebar-background);
+    color: var(--sidebar-text);
+    font-weight: 900;
+
+    box-shadow: 3px 0 5px -2px #888;
 }
 
-#sidebar > div {
-    border: 1px solid blue;
+#sidebar div {
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-content: flex-start;
     justify-items: flex-start;
-    gap: 50px;
+    align-items: center;
+    row-gap: 25px;
+}
+
+#sidebar img {
+    filter: invert(100%);
+    height: 30px;
+}
+
+#sidebar p {
+    font-size: 1.3em;
+}
+
+.title {
+    font-size: 1.6em;
+}
+
+#sidebar .title img {
+    height: 60px;
+    margin-right: 20px;
 }
 
 #main-content {
